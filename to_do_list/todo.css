@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3.75) {
+    /* CSS */
+} 
+
+.to_do {
+    width: 100%;
+    background-color: hsl(0, 0%, 5%);
+    color: hsl(0, 0%, 100%);
+    font-family: arial;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* position: relative; */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+}
+
+.content > h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: orangered;
+}
+.display {
+    height: 70%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.display .data {
+    margin: 10px 0;
+    background-color: hsl(0, 0%, 13%);
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+.todo_text {
+    margin-bottom: 10px;
+}
+.date_hour {
+    font-size: 14px;
+    margin: 5px 0;
+    color: orangered;
+    letter-spacing: 1px;
+    /* text-decoration: line-through; */
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    z-index: 74764;
+}
+form input {
+    width: 90%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 15%);
+    padding: 0 5px 0 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 19px;
+    
+}
+form input:focus {
+    /* background-color: hsl(0, 0%, 20%); */
+    outline: 2px solid orangered;
+}
+form button {
+    width: 45px;
+    height: 40px;
+    background-color: orangered;
+    border: orangered;
+    color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form button:hover {
+    background-color: rgb(175, 47, 0);
+}
+form button p {
+    margin-top: -5px;
+}
+.data .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0 0 0;
+}
+.data .buttons button {
+    background: none;
+    border: none;
+    
+}
+.data .buttons button img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_msg {
+    position: absolute;
+    z-index: 1324564;
+    /* background-color: hsl(16, 100%, 50%); */
+    /* background-color: red; */
+    /* background-color: green; */
+    /* background-color: hsl(212, 100%, 50%); */
+    top: 30px;
+    width: 90%;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 16px;
+    display: none;
+    align-items: center;
+    padding: 0 10px;
+}
